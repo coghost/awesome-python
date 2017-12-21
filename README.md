@@ -12,5 +12,5 @@
 ### 代码
 
 - [celery_first_steps](https://github.com/coghost/awesome-python/blob/master/code/distr_q/celery_first_steps)
-- [celery_first_steps](https://github.com/coghost/awesome-python/blob/master/code/distr_q/celery_next)
+- [celery_first_steps](code/distr_q/celery_next)
 
