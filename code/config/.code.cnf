@@ -1,0 +1,22 @@
+[log]
+enabled = false
+file_pth = /tmp/crawl.log
+file_backups = 3
+file_size = 5
+level = 10
+symbol = ☰☷☳☴☵☲☶☱
+
+[mg]
+host = 127.0.0.1
+port = 27027
+db = luoo
+username = 
+password = 
+
+[rds]
+host = 127.0.0.1
+port = 6380
+socket_timeout = 2
+socket_connect_timeout = 2
+password = 123456
+db = 0
