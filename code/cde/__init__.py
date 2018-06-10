@@ -11,9 +11,29 @@ if sys.version_info[0] < 3:
 
 import logzero
 
-from configs import Conf, LFormatter
+# from configs import Conf, LFormatter
+from izen.icfg import Conf, LFormatter
 
-cfg = Conf().cfg
+pth_cfg = os.path.join(app_root, 'configs/.code.cnf')
+cfg = Conf(
+    pth=pth_cfg,
+    dat={
+        'mg.host': '127.0.0.1',
+        'mg.port': 27027,
+        'mg.db': 'test_db',
+        'mg.username': '',
+        'mg.password': '',
+        'rds.host': '127.0.0.1',
+        'rds.port': 6379,
+        'rds.socket_timeout': 2,
+        'rds.socket_connect_timeout': 2,
+        'rds.password': '',
+        'rds.db': {
+            'val': 0,
+            'proto': str
+        },
+    }
+).cfg
 
 # 检查日志配置, 是否写入文件
 if cfg.get('log.enabled', False):

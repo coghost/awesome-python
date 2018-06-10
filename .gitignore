@@ -1,7 +1,13 @@
 # code
+*/.venv
 code/.venv
 code/.idea
 code/*/__pycache__/
+code/.history
+.vscode
+.history
+*/.vscode
+*/.pylintrc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
