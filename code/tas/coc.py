@@ -3,6 +3,8 @@ __author__ = 'lihe <imanux@sina.com>'
 __date__ = '30/03/2018 11:53 AM'
 __description__ = '''
 无论在 consumer 还是 producer，都是发出消息给对方后，就把代码执行交到对方，等待对方执行结果。
+参考: 
+https://blog.csdn.net/u010161379/article/details/51645264
 '''
 
 import os
@@ -23,7 +25,7 @@ class PrCs(object):
     """
 
     def __init__(self):
-        self.test_cp()
+        self.test()
 
     def consumer(self):
         r = ''
@@ -51,7 +53,7 @@ class PrCs(object):
 
         c.close()
 
-    def test_cp(self):
+    def test(self):
         c = self.consumer()
         self.produce(c)
 
@@ -261,5 +263,6 @@ def run():
 if __name__ == '__main__':
     # YFRead()
     # YFWr()
-    ATask(3)
+    # ATask(3)
+    PrCs()
     # run()

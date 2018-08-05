@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+__author__ = 'lihe <imanux@sina.com>'
+__date__ = '2018/7/1 11:06 AM'
+__description__ = '''
+参考
+https://www.cnblogs.com/grandyang/p/4606334.html
+'''
+
 import os
 import sys
 from functools import wraps
